@@ -1,7 +1,7 @@
 html, body {
     margin: 0px;
     padding: 0px;
-    /* font-size: 0px; */
+    font-size: 0px;
 }
 
 body {
@@ -13,6 +13,8 @@ body {
     background-color: #2b2b2b;
     color: white;
     height: 50px;
+    animation-name: navegacao;
+    animation-duration: 4s;
 }
 
 .menu-nav--principal ul {
@@ -62,6 +64,8 @@ body {
 .profile-pic--principal {
     width: 40%;
     text-align: center;
+    animation-name: profile-capa;
+    animation-duration: 2s;
 }
 
 .profile-pic--principal img {
@@ -73,6 +77,8 @@ body {
 .profile-title--principal {
     vertical-align: top;
     width: 60%;
+    animation-name: profile-title;
+    animation-duration: 2s;
 }
 
 .profile-title--principal h1 {
@@ -90,11 +96,9 @@ body {
 }
 
 .main {
-    padding: 80px 180px 80px 100px;
-    /* padding-top: 80px;
-    padding-right: 180px;
-    padding-left: 80px;
-    padding-bottom: 100px; */
+    padding: 40px 180px 80px 100px;
+    animation-name: conteudo;
+    animation-duration: 2s;
 }
 
 .main .cv-pic {
@@ -140,9 +144,11 @@ body {
 .caminho li {
     display: inline-block;
 }
+
 .caminho a {
     color: gray;
 }
+
 .social-img {
     width: 50px;
     margin-right: 10px;
@@ -169,10 +175,12 @@ body {
     background-color: black;
     opacity: 0;
     padding-top: 100px;
+    transition: 1s;
 }
 
 .blackbox:hover {
     opacity: 0.5;
+    transition: 1s;
 }
 
 .blackbox-text {
@@ -197,6 +205,111 @@ body {
     margin-bottom: 10px;
     margin-top: 40px
 }
-.back-link{
+
+.back-link {
     color: #f27609;
+}
+
+@keyframes profile-capa {
+    0% {
+        transform: translate(0px, 20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes profile-title {
+    0% {
+        transform: translate(0px, -20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes navegacao {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes conteudo {
+    0% {
+        transform: translate(-20px, 0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu-nav--principal li {
+        display: none;
+    }
+    .menu-nav--principal li.threeline-icon {
+        display: inline-block;
+    }
+    .profile-pic--principal {
+        width: 100%;
+    }
+    .profile-pic--principal img {
+        margin-top: 0px;
+        max-width: 80%;
+    }
+    .profile-title--principal {
+        text-align: center;
+        margin-top: 0px;
+        width: 100%;
+    }
+    .profile-title--principal h1 {
+        margin-top: 30px;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .profile-title--principal h2 {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .capa-pagina--principal div {
+        display: block;
+        height: auto;
+    }
+    .main {
+        padding: 10px 5% 40px 5%;
+    }
+    .main p {
+        text-align: left;
+        line-height: 30px;
+    }
+    .caminho li {
+        font-size: 14px;
+    }
+    .cv-pic {
+        float: none;
+        max-width: 100%;
+        ;
+        margin-right: 0px;
+    }
+    .miniatura {
+        max-width: 100%;
+        background-size: auto 100%;
+    }
+    .blackbox{
+        opacity: 0.5;
+    }
 }
