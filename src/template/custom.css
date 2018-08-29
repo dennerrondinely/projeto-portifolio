@@ -1,0 +1,394 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+}
+
+body {
+    background-image: url('/img/background_smart3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #086f6e;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-nav--principal {
+    background-color: #020e34;
+    color: white;
+    height: 50px;
+    animation-name: navegacao;
+    animation-duration: 4s;
+}
+
+.menu-nav--principal ul {
+    margin-top: 0px;
+    list-style: none;
+    padding-left: 0px;
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+}
+
+.menu-nav--principal li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.menu-nav--principal a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-nav--principal a:hover {
+    color: #1cd6d0;
+}
+
+.menu-nav--principal li.threeline-icon {
+    display: none;
+}
+
+.menu-nav--principal li.threeline-icon:hover {
+    color: #1cd6d0;
+    cursor: pointer;
+}
+
+.capa-pagina--principal {
+    color: white;
+}
+
+.capa-pagina--principal span {
+    color: #020e34;
+    display: block;
+}
+
+.capa-pagina--principal div {
+    display: inline-block;
+    height: 650px;
+}
+
+.profile-pic--principal {
+    width: 40%;
+    text-align: center;
+    animation-name: profile-capa;
+    animation-duration: 2s;
+}
+
+.profile-pic--principal img {
+    width: 350px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+.profile-title--principal {
+    vertical-align: top;
+    width: 60%;
+    animation-name: profile-title;
+    animation-duration: 2s;
+}
+
+.profile-title--principal h1 {
+    font-size: 58px;
+    text-transform: uppercase;
+    margin-top: 200px;
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.profile-title--principal h2 {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: -30px;
+}
+
+.main {
+    padding: 40px 180px 80px 100px;
+    animation-name: conteudo;
+    animation-duration: 2s;
+}
+
+.main .cv-pic {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.main h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.main h2 {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+.main h3 {
+    color: #020e34;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.main p {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.caminho {
+    list-style: none;
+    padding-left: 0;
+    color: gray;
+}
+
+.caminho li {
+    display: inline-block;
+}
+
+.caminho a {
+    color: gray;
+}
+
+.icons-contato {
+    display: flex;
+}
+
+.icons-contato a {
+    margin-right: 10px;
+}
+
+.social-img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.miniatura {
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.miniatura a {
+    text-decoration: none;
+}
+
+.blackbox {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    padding-top: 100px;
+    transition: 1s;
+}
+
+.blackbox:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.blackbox-text {
+    text-align: center;
+}
+
+.blackbox-text h1 {
+    font-size: 16px;
+    color: #086f6e;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.blackbox-text h2 {
+    text-transform: none;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+.foto-trabalhos {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 40px
+}
+
+.foto-trabalhos-mobile {
+    width: 20%;
+    margin: 10% auto auto 40%;
+}
+
+.back-link {
+    color: #020e34;
+}
+
+.redes-sociais {
+    background: url('/img/redes_sociais.png');
+    width: 50px;
+    height: 50px;
+    background-size: 285px;
+    background-repeat: no-repeat;
+}
+
+#linkedin {
+    background-position: -10px -4px;
+}
+
+#github {
+    background-position: -149px -4px;
+}
+
+#codepen {
+    background-position: -79px -4px;
+}
+
+#instagram {
+    background-position: -219px -4px;
+}
+
+@keyframes profile-capa {
+    0% {
+        transform: translate(0px, 20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes profile-title {
+    0% {
+        transform: translate(0px, -20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes navegacao {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes conteudo {
+    0% {
+        transform: translate(-20px, 0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        /* background-color: #1D3557; */
+        background-image: url('/img/background_smart_mobile.jpg');
+        background-size: 100% 100%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .menu-nav--principal li {
+        display: none;
+    }
+    .menu-nav--principal li.threeline-icon {
+        display: inline-block;
+    }
+    .profile-pic--principal {
+        width: 100%;
+    }
+    .profile-pic--principal img {
+        margin-top: 0px;
+        max-width: 80%;
+    }
+    .profile-title--principal {
+        text-align: center;
+        margin-top: 0px;
+        width: 100%;
+    }
+    .profile-title--principal h1 {
+        margin-top: 30px;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .profile-title--principal h2 {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .capa-pagina--principal div {
+        display: block;
+        height: auto;
+    }
+    .main {
+        padding: 10px 5% 40px 5%;
+    }
+    .main a {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .main p {
+        text-align: left;
+        line-height: 30px;
+    }
+    .caminho li {
+        font-size: 14px;
+    }
+    .cv-pic {
+        float: none;
+        max-width: 100%;
+        ;
+        margin-right: 0px;
+    }
+    .miniatura {
+        max-width: 100%;
+        background-size: auto 100%;
+    }
+    .blackbox {
+        opacity: 0.5;
+    }
+    .menu-js {
+        height: auto;
+    }
+    .menu-js ul {
+        height: auto;
+        text-align: center;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+    .menu-js li {
+        display: block;
+        border-bottom: solid #086f6e 1px;
+    }
+    .foto-trabalhos-mobile {
+        width: 100%;
+        margin: 0;
+    }
+    #curriculo h3 {
+        clear: both;
+    }
+}
