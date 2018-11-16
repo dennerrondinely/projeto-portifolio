@@ -69,11 +69,7 @@
 		</div>
 </template>
 <script>
-<<<<<<< HEAD
 import "./style/style.scss";
-=======
-// import "./style/style.scss";
->>>>>>> 2a4180aaa84c0a3599c9cc6c39cea161511e3bcc
 export default {
   name: "curriculo"
 };
