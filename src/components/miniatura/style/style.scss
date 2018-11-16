@@ -1,0 +1,54 @@
+.miniatura {
+  width: 320px;
+  height: 320px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  a {
+    text-decoration: none;
+  }
+  .blackbox {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    padding-top: 100px;
+    transition: 1s;
+    &:hover {
+      opacity: 0.5;
+      transition: 1s;
+    }
+  }
+  .blackbox-text {
+    text-align: center;
+    h1 {
+      font-size: 16px;
+      color: #086f6e;
+      text-transform: uppercase;
+      margin-top: 0;
+    }
+
+    h2 {
+      text-transform: none;
+      font-weight: 100;
+      margin-top: 0;
+    }
+  }
+}
+@media (max-width: 1000px) { 
+  
+  .miniatura {
+    max-width: 100%;
+    background-size: auto 100%;
+  }
+  .blackbox {
+    opacity: 0.5;
+  }
+  .foto-trabalhos-mobile {
+    width: 100%;
+    margin: 0;
+  }
+}
