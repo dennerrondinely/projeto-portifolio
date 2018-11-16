@@ -1,0 +1,29 @@
+.icons-contato {
+    display: flex;
+    a {
+        margin-right: 10px;
+    }
+    .redes-sociais {
+        background: url('../../../assets/redes_sociais.png');
+        width: 50px;
+        height: 50px;
+        background-size: 285px;
+        background-repeat: no-repeat;
+    }
+
+    #linkedin {
+        background-position: -10px -4px;
+    }
+
+    #github {
+        background-position: -149px -4px;
+    }
+
+    #codepen {
+        background-position: -79px -4px;
+    }
+
+    #instagram {
+        background-position: -219px -4px;
+    }
+}

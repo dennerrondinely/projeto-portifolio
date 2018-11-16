@@ -1,0 +1,56 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+}
+
+body {
+    background-image: url('../assets/background_smart3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #086f6e;
+    font-family: 'Montserrat', sans-serif;
+}
+.main {
+    padding: 40px 180px 80px 100px;
+    animation-name: conteudo;
+    animation-duration: 2s;
+    .cv-pic {
+        float: left;
+        width: 200px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: white;
+        font-size: 28px;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-top: 40px;
+    }
+
+    h3 {
+        color: #020e34;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: white;
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 24px;
+        text-align: justify;
+    }
+}
+
