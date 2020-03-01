@@ -4,7 +4,7 @@ module.exports = {
   author: 'Denner Rondinely',
   url: 'https://dennerrondinely.com/',
   legalName: 'Denner Rondinely',
-  defaultDescription: 'I’m Denner Rondinely and I’m a student Web Developer at the HAN in Arnhem. Skilled in PHP, SQL, NoSQL, Javascript (ES6), NodeJS & React.',
+  defaultDescription: 'I’m Denner Rondinely and I’m a front-end Web Developer. Skilled in Javascript (ES6), NodeJS, VUE & React.',
   socialLinks: {
     github: 'https://github.com/dennerrondinely',
     linkedin: 'https://www.linkedin.com/in/denner-rondinely-da-silva/',
